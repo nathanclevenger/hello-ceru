@@ -3,7 +3,7 @@ import { withParams, json } from 'https://pkg.do/itty-router-extras'
 
 const router = Router()
 
-router.get('/', ({url}) => json({ url, hello: 'ceru', 'Deploy in Seconds 🚀': 'https://github.com/drivly/itty-router-template/generate' }))
+router.get('/', ({url}) => json({ url, hello: 'ceru', v: 2, 'Deploy in Seconds 🚀': 'https://github.com/drivly/itty-router-template/generate' }))
 router.get('/:resource?/:id?', withParams, ({url, resource, id}) => json({ url, resource, id}))
 
 export default {
